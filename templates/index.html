@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="vertically-stack">
+    <h1>Weather App</h1>
+    <form action="{{ url_for('weather') }}" method="post">
+        <div class="form-group">
+            <input type="text" id="city" name="city" placeholder="Enter city name">
+        </div>
+        <button type="submit">Get Weather</button>
+    </form>
+  </div>
+{% endblock %}

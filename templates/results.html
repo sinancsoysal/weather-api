@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Weather Result</h1>
+    {% if result %}
+        <h2>Temperature in {{ city }}: {{ result }}°C</h2>
+    {% else %}
+        <h2>Oops! City not found. Try a larger city name nearby.</h2>
+    {% endif %}
+{% endblock %}
